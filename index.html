@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #592e57;
+            color: rgb(255, 201, 251);
+            padding: 1em;
+            text-align: center;
+        }
+        header:hover{
+            color:#ff6ef3;
+            background-color: #ffffff;
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 0.5em;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 0.5em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ffffff;
+            color:#ff6ef3
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            transition: margin 0.5s ease;
+            background-color: #f6d3ff;
+        }
+        section.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #profile-picture {
+            width: 150px; 
+            height: 200px; 
+            border-radius: 10%; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 20px; 
+        }
+
+        .project {
+            margin-bottom: 1em;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        footer:hover{
+            background-color: #ffffff;
+            color:#ff6ef3;
+        }
+        .img{
+        display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 15%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            justify-content: center;
+            width:100;
+            height:150;
+            border-style: solid;
+            border-color: rgb(0, 35, 63);
+    }
+    .img:hover
+        {
+            transform: scale(1.05);
+        }
+    #eli{
+        color:rgb(132, 0, 94);
+    }
+    .fade-in {
+            opacity: 0;
+        }
+    table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            opacity: 0; 
+            transition: opacity 1s; 
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #000000;
+            color: white;
+        }
+        tr{
+            background-color: whitesmoke;
+        }
+
+        tr:hover {
+            background-color: #df98f1;
+        }
+        dt
+        {
+            font-weight: bold;
+            font-style:italic;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+        #mail{
+            background: #125688;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        #call{
+            background: #7da4c3;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VASISHTA MANJUNATH</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <nav>
+      <a href="#personal-info">Personal Information</a>
+       <a href="#summary">Summary</a>
+       <a href="#education">Education</a>
+       <a href="#work-experience">Work Experience</a>
+       <a href="#skills">Skills</a>
+       <a href="#projects">Projects</a>
+       <a href="#certificates">Certificates</a>
+       <a href="#contact">Contact</a>
+    </nav>
+    <section id="personal-info">
+        <h2>Personal Information</h2>
+		
+    <ul id="personal-info-details">
+<img id="profile-picture" src="C:\Users\Vasishta M\Downloads\1678721443251 (1).jpg"  alt="Profile picture">
+      <br>
+      <h3>
+        NAME:&nbsp; VASISHTA MANJUNATH<br>
+		DOB :&nbsp; 18th February, 2005<br>
+		CITY : &nbsp;Bengaluru
+		</h3>
+		
+    </ul>
+        
+    </section>
+
+    
+    <section id="summary">
+        <h2>Summary</h2>
+        <p style="font-family:Helvetica;">
+Experienced web designer skilled in creating visually appealing and user-friendly websites.
+ <br>Proficient in web design tools and front-end development. Strong collaborator and detail-oriented.
+<br>Proficiency in <u>Graphic design software</u> such as Adobe Photoshop, Illustrator.
+</p>
+    </section>
+
+    
+    <section id="education">
+        <h2>Education</h2>
+        <table id="education-table" style="font-family:courier;border:3px solid Black;width:100%;">
+            <tr>
+            <th><u><b>Course</b></u></th>
+            <th><u><b>School/University</b></u></th>
+            <th><u><b>Marks/CGPA</b></u></th>
+            </tr>
+            <tr>
+            <td>SSLC (ICSE)</td>
+            <td>:ANPS</td>
+            <td>96%</td>
+            <tr>
+            <td>2nd PUC (STATE BOARD)</td>
+            <td>:DCFL PU COLLEGE</td>
+            <td>91%</td>
+            </tr>
+            <tr>
+            <td>Bachelor of Science in Web Design and Development  </td>
+            <td> :R V UNIVERSITY </td>
+            <td>8.3 CGPA</td>
+            </tr>
+            </table>
+            </center>
+    </section>
+
+    
+    <section id="work-experience">
+        <h2>Work Experience</h2>
+        <dl id="work-list">
+            <dt>Web Designer at Imaginative Solutions Inc.</dt>
+            
+            <dd>-Worked here for 1 year under the Graphics Design team for completing a project successfully.</dd>
+            
+            <dt>Freelance Web Designer</dt>
+            
+            <dd>-Worked here for 2 years as client communicator, UX designer as well as the head of the Graphics Designing team. </dd>
+            
+        </dl>
+    </section>
+
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul id="skills-list">
+            <li style="opacity: 0; transition: opacity 1s;">Web Design</li>
+            <li style="opacity: 0; transition: opacity 1s;">User Experience (UX) Design</li>
+            <li style="opacity: 0; transition: opacity 1s;">User Interface (UI) Design</li>
+            <li style="opacity: 0; transition: opacity 1s;">Graphic designing</li>
+            <li style="opacity: 0; transition: opacity 1s;">HTML, CSS, JavaScript</li>
+            <li style="opacity: 0; transition: opacity 1s;">Adobe Creative Suite</li>
+            <li style="opacity: 0; transition: opacity 1s;">Responsive Design</li>
+            <li style="opacity: 0; transition: opacity 1s;">SEO Optimization
+            </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <fieldset>
+                <legend style="color:brown"><h3 style="color: rgb(25, 0, 68);">ELIXIR: Beverages ordering website</h3></legend>
+            <img class="img" src="C:\Users\Vasishta M\Pictures\Screenshots\Screenshot 2024-01-05 200458.png" alt="Project 1 Image">
+            <p class="eli"><b id="eli"><h3>Elixer Beverages Website</h3></b>
+                <br><ul>
+               <li>The Elixer website – 
+                 a curated space where exceptional flavors, innovation, and sustainability converge to redefine the world of refreshments. 
+                 As the designated AI copywriter for this project, I had the privilege of crafting the website's narrative, reflecting the brand's commitment to delivering an unparalleled beverage experience.
+                </li><br>
+                <li><u>
+                Overview</u>:
+                The Elixer Beverages website is a vibrant online destination designed to immerse visitors in a world of extraordinary refreshment. 
+                Its user-friendly interface seamlessly integrates with the brand's identity, offering an engaging and visually stunning platform for exploring a diverse range of soft drinks, fruit juices, and energy drinks.
+           </li></ul> </p>
+            </fieldset>
+            </div>
+
+        <div class="project">
+            <fieldset>
+                <legend style="color:brown"><h3 style="color: rgb(25, 0, 68);">STUDENTS CLUB ACTIVITY WEBSITE FOR THE RV UNIVERSITY</h3></legend>
+            <img class="img" src="C:\Users\Vasishta M\Pictures\Screenshots\Screenshot 2024-01-05 200634.png" alt="Project 2 Image">
+            <p>This webpage was developed for the RV University for helping the students to select the different clubs present in the University</p>
+        </div>
+    </section>
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <ul id="cert-list">
+            <li style="opacity: 0; transition: opacity 1s;">Certified Web Designer (CWD)</li>
+            <li style="opacity: 0; transition: opacity 1s;">Adobe Certified Associate (ACA)</li>
+            </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to contact me</p>
+        <a href="https://www.linkedin.com/in/vasishta-manjunath-11a019268/" class="fa fa-linkedin" target="blank"></a>
+        <a href="https://www.instagram.com/vasishta_2005_/" class="fa fa-instagram" target="blank" ></a>
+        <a href="mailto:vasishta.manjunath1629@gmail.com" target="blank"><span id="mail" class="fa">&#9993;</span></a>
+        <a href="tel:+916362027721" target="blank"><span id="call" class="fa">&#128222;</span></a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved to Vasishta Manjunath.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            
+
+            
+            window.addEventListener('scroll', function () {
+            const offset = window.scrollY;
+            document.querySelector('header').style.backgroundPositionY = offset * 0.5 + 'px';
+        });
+
+            window.addEventListener('scroll', function() {
+                var scrollPosition = window.scrollY;
+
+                if (scrollPosition > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            var educationSection = document.getElementById('education');
+            var table = document.getElementById('education-table');
+
+            
+            var rect = educationSection.getBoundingClientRect();
+
+            
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                setTimeout(function() {
+                    table.style.opacity = 1;
+                }, 500); 
+            }
+        });
+
+        window.addEventListener('scroll', function() {
+            var skillsSection = document.getElementById('skills');
+            var skillsListItems = document.querySelectorAll('#skills-list li');
+            var workSection = document.getElementById('work-experience');
+            var workListItems = document.querySelectorAll('#work-list dd');
+            var projectSection = document.getElementById('projects');
+            var projectListItems = document.querySelectorAll('#project-list li');
+            var certSection = document.getElementById('certificates');
+            var certListItems = document.querySelectorAll('#cert-list li');
+
+            
+            var skillsRect = skillsSection.getBoundingClientRect();
+
+            
+            if (skillsRect.top <= window.innerHeight && skillsRect.bottom >= 0) {
+                skillsListItems.forEach(function(item, index) {
+                    setTimeout(function() {
+                        item.style.opacity = 1;
+                    }, index * 500); 
+        
+                });
+            }
+
+
+            var workListRect = workSection.getBoundingClientRect();
+
+            if (workListRect.top <= window.innerHeight && workListRect.bottom >= 0) {
+                workListItems.forEach(function(item, index) {
+                    setTimeout(function() {
+                        item.style.opacity = 1;
+                    }, index * 1000); 
+        
+                });
+            }
+
+            var projectInfoRect = projectSection.getBoundingClientRect();
+            if (projectInfoRect.top <= window.innerHeight && projectInfoRect.bottom >= 0) {
+                projectListItems.forEach(function(item, index) {
+                    setTimeout(function() {
+                    item.style.opacity = 1;
+                     }, index * 500); 
+                });
+            }
+            var certInfoRect = certSection.getBoundingClientRect();
+            if (certInfoRect.top <= window.innerHeight && certInfoRect.bottom >= 0) 
+            {
+                certListItems.forEach(function(item, index) {
+                    setTimeout(function() {
+                        item.style.opacity = 1;
+                    }, index * 500);
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
